@@ -4,9 +4,9 @@ var turmas={
 
             {       
             sala: "GREMIO",         
-            nome: ["Branca","Roxa", "Azul"],   
+            nome: ["Azul","Branca", "Roxa"],   
             numero: [1,2,3] , 
-            foto:["FOTOS/Braca.png","FOTOS/Roxa.png","FOTOS/Azul.png"]
+            foto:["FOTOS/Azul.png","FOTOS/Branca.png","FOTOS/Roxa.png"]
             }
             
             
