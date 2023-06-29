@@ -1,0 +1,594 @@
+*{
+    margin:0px; 
+    border: 0px; 
+    padding:0px;
+    background-color: rgb(0,61,123);
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px 2px rgb(255, 255, 255);
+}
+a:link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px 2px rgb(255, 255, 255);
+}
+a:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px 2px rgb(255, 255, 255);
+}
+a:active{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px 2px rgb(255, 255, 255);
+}
+
+@media (max-width:1100px){
+
+    #div1{
+        width:100%;
+        text-align: center;
+        position: absolute;
+        top:55px;
+    }
+    .foto{
+        width: 550px;
+    }
+    #div2{
+        position: relative;
+        top:360px;
+        width: 100%;
+        text-align: center;
+    }
+    #comecar{
+        font-family: 'Tilt Warp', cursive;
+        font-size: 50px;
+        letter-spacing: 1px;
+        color: rgb(255, 255, 255);
+        text-shadow:1px 1px 2px rgb(255, 255, 255);
+    }
+    #pag2{
+        background-color: #994597;
+        width: 100%;
+        height:490px;
+        margin-top: 430px;
+    }
+    #pag3{
+        background-color: rgb(0,61,123);
+        width: 100%;
+        min-height:100vh;
+    }
+    #pag4{
+        background-color: rgb(233,194,25, 1);
+        width:100%;
+        min-height:200px;
+        max-height:700px;
+    } 
+
+    h1{
+        font-family: 'Tilt Warp', cursive;
+        font-size:50px;
+        letter-spacing: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255,0);
+        position: relative;
+        top:30px;
+        left: 30px;
+        width: 700px;
+    }
+
+    .divturma1{
+        width: 100%;
+        height: 80px;
+        margin-top: 150px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: rgb(255, 255, 255,0);
+    }
+    .opcoes{
+        font-family: 'Tilt Warp', cursive;
+        width: 190px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgb(233,194,25, 1);
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        margin:30px;
+        
+    }
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    option{
+        background-color: white;
+        color:rgb(233,194,25, 1);
+    }
+    .proximo{
+        width: 150px;
+        height: 40px;
+        background-color: #59b846;
+        position: relative;
+        top: -260px;
+        right: -720px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #btnProximo1{
+        font-family: 'Tilt Warp', cursive;
+        font-size: 28px;
+        width: 124px;
+        color:white;
+        background-color: rgb(233,194,25, 0);
+        position: relative;
+        top:3px;
+    }
+    #aProximo{
+        background-color: rgb(233,194,25, 0);
+    }
+
+    .divcandidato{
+        width: 100%;
+        min-height:300px;
+        margin-top:40px;
+        display: flex;
+        float:left;   
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tdcerto{
+        width: 230px;
+        height: 40px;
+        background-color: #59b846;
+        position: relative;
+        bottom:20px;
+        right:-600px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #btntdcerto{
+        width: 200px;
+        font-family: 'Tilt Warp', cursive;
+        font-size: 28px;
+        color:white;
+        background-color: rgb(233,194,25, 0);
+    }   
+
+    #candidato{
+        background-color: rgb(255,255,255, 0.3);
+        width: 200px;
+        height: 250px;
+        border-radius: 15px;
+        display: none;
+        align-items: center;  
+        margin: 15px;
+    }
+    #adccandidato{
+        background-color:rgb(255,255,255, 0);
+        margin:auto;
+    }
+    ion-icon{
+        color: rgb(255,255,255, 0.8);
+        font-size: 60px;
+        border-radius: 100%;
+        background-color:rgb(255,255,255, 0.05);
+    }
+
+    
+    .questionario{
+        width: 450px;
+        height: 400px;
+        background-color: rgb(233,194,25, 0.8);
+        position: absolute;
+        left: 300px;
+        top:1040px;
+        border-radius: 30px;
+        display:none;
+        z-index: 2;
+    }
+
+    #formulario{
+        background-color: rgb(233,194,25, 0);
+        position: relative;
+        left: 15px;
+        top: 40px;
+    }
+    .titulo{
+        font-family: 'Anton', sans-serif;
+        color: rgb(0,61,123);
+        background-color: rgb(233,194,25, 0);
+        font-size: 28px;
+    }
+    .input{
+        font-family: arial;
+        font-weight: bold;
+        width: 240px;
+        height: 35px;
+        color: black;
+        background-color: rgb(255,255,255);
+        border-radius: 5px;
+        font-size: 15px;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+    }
+    option{
+        background-color: white;
+    }
+    #adicionar{
+        font-family: 'Anton', sans-serif;
+        padding:5px;
+        color: rgb(0,61,123);
+        background-color: rgb(255,255,255);
+        font-size: 20px;
+        position:relative;
+        top:10px;
+        left: 3px;
+    }
+    .fotocandidato{
+        background-color: rgb(255,255,255, 0.3);
+        width: 160px;
+        height: 260px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        position:absolute;
+        top: 50px;
+        left: 275px;
+    }
+
+    #enviarfoto{
+        background-color:rgb(255,255,255, 0);
+        margin:auto;
+    }
+
+    #botaoclose{
+        position:absolute;
+        top:10px;
+        right: 20px;;
+        background-color:rgb(255,255,255, 0);
+
+    }
+    #fechar{
+        color: rgb(255,255,255, 0.8);
+        font-size:40px;
+        border-radius: 100%;
+        background-color:rgb(255,255,255, 0);
+    }
+    #fecharquestionario{
+        background-color:rgb(255,255,255, 0);
+    }
+    .alerta{
+        font-size: 15px;
+        margin-top: 0px;
+        border: 0px;
+        padding: 0px;
+        color: red;
+        background-color:rgb(255,255,255, 0);
+        width: 230px;
+    }
+
+    input[type="file"]{
+        background-color:rgb(255,255,255, 0);
+        display: none; 
+    }
+
+    #enviarimg{
+        background-color:rgb(255,255,255, 0);
+        margin: auto;
+    }
+
+    .info{
+        background-color: rgb(233,194,25, 0.9);
+        width: 200px;
+        height: 250px;
+        border-radius: 15px; 
+        margin: 15px;
+        display: block;
+        overflow: visible;
+    }
+    .numero{
+        font-family: 'Tilt Warp', cursive;
+        font-size: 45px;
+        width: 60px;
+        background-color: red;
+        border-radius: 150%;
+        text-align: center;
+        color:white;
+        position: relative;
+        top:-20px;
+        left: -8px;
+        z-index:1;
+        display:block;
+    }
+    .imagemCandidato{
+        width: 180px;
+        height: 190px;
+        position: relative;
+        top:-45px;
+        left: 10px;
+        border-radius: 15px;
+        background-color: rgb(255,255,255,0.2);
+    }
+    .enviarimg1{
+        background-color:rgb(255,255,255, 0);
+        position: relative;
+        top:55px;
+        left: 60px;
+    }
+    .representante{
+        width: 170px;
+        height: 25px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 4px;
+        font-family: 'Tilt Warp', cursive;
+        background-color: rgb(0,61,123, 1);
+        color:white;
+        position: relative;
+        left: 15px;
+        top:-60px;
+        display:block;
+        z-index: 1;
+    }
+    .turma{
+        width: 130px;
+        height: 25px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 4px;
+        font-family: 'Tilt Warp', cursive;
+        background-color: white;
+        color: rgb(0,61,123, 1);
+        position: relative;
+        left: 31px;
+        top:-58px;
+        display: block;
+    }
+
+    .excluirCand{
+        background-color: rgb(255,255,255, 0.5);
+        position: relative;
+        top: -325px;
+        left: 160px;
+        font-size: 40px;
+        display: block;
+        width: 45px;
+        height: 45px;
+        color: white;
+        border-radius: 50%;
+        transform: rotate(45deg)
+    }
+
+    .caixaPrincipal{
+        width: 950px;
+        height: 460px;
+        background-color: rgb(198,193,174,255);
+        margin:auto;
+        position:relative;
+        top:20px;
+        left: -6px;
+        border-radius: 10px;
+    }
+
+    .caixaVisualizacao{
+        width: 540px;
+        height: 400px;
+        background-color: white;
+        position: relative;
+        top:30px;
+        border-radius: 5px;
+        left: 25px;
+    }
+    .caixaTeclado{
+        background-color: rgba(69,64,61,255);
+        width: 350px;
+        height: 462px;
+        position: relative;
+        top:-400px;
+        left: 585px;
+        
+    }
+    .caixanum1{
+        background-color: rgba(69,64,61,255);
+        width: 350px;
+        height: 80px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        float:left;   
+        align-items: center;
+    }
+    .caixanum2{
+        background-color: rgba(69,64,61,255);
+        display: flex;
+        float: left;
+        width: 350px;
+        height: 80px;
+        margin-bottom: 10px;
+       
+    }
+    .caixanum3{
+        background-color: rgba(69,64,61,255);
+        display: flex;
+        float: left;
+        align-items: center;
+        width: 350px;
+        height: 80px;
+        margin-bottom: 10px;
+       
+      
+    }
+    .caixanum4{
+        background-color: rgba(69,64,61,255);
+        display: flex;
+        float: left;
+        align-items: center;
+        width: 350px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .numeros{
+        width: 90px;
+        height: 60px;
+        font-size: 60px;
+        font-family: arial;
+        border-radius: 4px;
+        color: white;
+        background-color: black;
+        margin:auto;
+        text-align: center;
+        padding-bottom: 5px;
+   }
+   .numeros1{
+    width: 100%;
+    display: flex;
+    background-color: rgba(69,64,61,0);
+   }
+   .vota{
+        background-color: rgba(69,64,61,255);
+        display: flex;
+        float:left;   
+        align-items: center;
+        width: 350px;
+   }
+   .corrige{
+    width: 140px;
+    height: 50px;
+    font-size: 25px;
+    font-family: arial;
+    border-radius: 4px;
+    color: black;
+    background-color: rgba(171,76,44,255);
+    margin:auto;
+    text-align: center;
+    padding-top:18px;
+   }
+
+   .confirma{
+    width: 140px;
+    height: 50px;
+    font-size: 25px;
+    font-family: arial;
+    border-radius: 4px;
+    color: black;
+    background-color: rgba(71,205,120,255);
+    margin:auto;
+    text-align: center;
+    padding-top:18px;
+   }
+   .imagemCand{
+        width: 180px;
+        height: 190px;
+        position: relative;
+        top:-285px;
+        left: 10px;
+        border-radius: 15px;
+        z-index: 0;
+   }
+   .imagemUrna{
+        width: 200px;
+        height: 280px;
+        position: relative;
+        top:10px;
+        left: 330px;
+        border-width: 5px;
+        border-color: black;
+        background-color: rgba(71,205,120,0);
+   }
+   .numeroUrna{
+    position: relative;
+    top:-250px;
+    left: 15px;
+    width: 155px;
+    font-size: 35px;
+    font-family: 'Tilt Warp', cursive;
+    background-color: rgba(71,205,120,0);
+   }
+   #resultadoUrna{
+    background-color: rgba(71,205,120,0);
+    width: 155px;
+    height: 140px;
+    position: relative;
+    top:-290px;
+    left:170px;
+    font-family: 'Tilt Warp', cursive;
+    letter-spacing: 3px;
+    font-size: 130px;
+    border: solid;
+    display: flex;
+    align-items: center;
+    border-width:0.1px;
+   }
+   .nomeUrna{
+    background-color: rgba(71,205,120,0);
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top:-200px;
+    left: 15px;
+    font-size: 35px;
+    font-family: 'Tilt Warp', cursive;
+   }
+   .nomeResultado{
+    width: 350px;
+    font-size: 30px;
+    font-family: 'Tilt Warp', cursive;
+    position: relative;
+    top:-200px;
+    left: 30px;
+    background-color: rgba(71,205,120,0);
+    color: rgb(0,61,123);
+   }
+
+   .encerrar{
+    width:50%;
+    height:50px;
+    background-color: red;
+    margin:auto;
+    align-items:center;
+    padding-top: 6px;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top:150px;
+    border-radius: 10px;
+   }
+   .fim{
+    position: relative;
+    top:-411px;
+    left: 53px;
+    width:540px;
+    height: 400px;
+    color:#000000;
+    background-color: white;
+    display: none;
+    font-size: 95px;
+    font-family: 'Tilt Warp', cursive;
+   }
+
+  #texto{
+    position: relative;
+    top:-230px;
+    left: 190px;
+    background-color: white;
+  }
+
+}

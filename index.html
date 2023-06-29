@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Abel - La Salle</title>
+    <!-- link pro css  -->
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <!-- link fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- --------------------------------- -->
+    <div id="pag1">
+
+
+        <div id="div1">
+
+            <img class="foto" src="logo2.png"> 
+
+        </div>
+
+        <div id="div2">
+
+            <button id="comecar">
+                <a href="#pag2">VAMOS LÁ!</a>
+            </button>
+
+        </div>
+
+    </div>
+    
+    <!-- --------------------------------- -->
+
+    <div id="pag2"> 
+
+        <h1>ESCOLHA SUA TURMA:</h1>
+
+        <div class="divturma1"> 
+        
+            <select class="opcoes">
+                <option value="opcao" selected>GREMIO</option>
+                <option value="GREMIO">CHAPAS</option>
+            </select>
+
+        </div>
+
+        <div class="proximo">
+
+            <button type="button" id="btnProximo1">
+                <a href='#pag3' id="aProximo"> PRÓXIMO </a>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- --------------------------------- -->
+
+    <div id="pag3"> 
+
+        <h1>CANDIDATOS:</h1>
+
+        <div class="tdcerto">
+
+            <button type="button" id="btntdcerto">
+                <a href='#pag4' id="aProximo"> TUDO PRONTO! </a>
+            </button>
+
+        </div>
+
+        <div class="divcandidato"> 
+
+            
+            
+            <div id="candidato">
+
+                <button type="button" id="adccandidato">
+
+                    <ion-icon name="add-outline"></ion-icon>
+
+                </button>
+
+            </div>
+        
+        </div>
+
+        <div class="questionario">
+
+            <form id="formulario" method="POST" action="urna.py">
+    
+                    <label for="rep" class="titulo"> Representante: </label><br>
+                    <input type="text" name="representante" class="input"  maxlength="20" ><br class="br"><br>
+                    
+    
+                    <label for="vicerep" class="titulo"> Turma: </label><br>
+                    <input type="number" name="vicerepresentante" class="input"  maxlength="16"><br class="br"><br>
+    
+    
+                    <label for="num" class="titulo"> Número: </label><br>
+                    <input type="number" name="numero" class="input"  maxlength="2" ><br class="br"><br>
+    
+                    <input type="button" id="adicionar" value="Adicionar"/>
+                    
+            </form><br><br>
+    
+                <div class="fotocandidato"> 
+    
+                    <label id="enviarimg">
+    
+                        <ion-icon name="add-outline"><input type="file" id="img1"></ion-icon>
+    
+                    </label>
+    
+                    
+                </div>
+    
+                <div id="botaoclose"> 
+    
+                    <button type="button" id="fecharquestionario">
+    
+                        <ion-icon id="fechar" name="close-outline"></ion-icon>
+    
+                    </button>
+                
+                </div>
+    
+    
+        </div>
+
+     
+      
+    </div>
+
+    <!-- --------------------------------- -->
+
+
+    <div id="pag4">
+        
+
+        <div class="caixaPrincipal"> 
+
+            <div class="caixaVisualizacao">
+
+
+
+                <img class="imagemUrna" >
+                <p class="numeroUrna"> NUMERO: </p>
+                <p id="resultadoUrna"></p>
+                <p class="nomeUrna">Nome:</p>
+                <p class="nomeResultado"></p>
+                
+            </div>
+    
+            <div class="caixaTeclado"> 
+    
+                <div class="caixanum1"> 
+    
+                   <p class="numeros1"><button class="numeros" onclick="insert(1)">1</button></p>
+                   <p class="numeros1"><button class="numeros" onclick="insert(2)">2</button></p>
+                   <p class="numeros1"><button class="numeros" onclick="insert(3)">3</button></p>
+    
+                </div>
+    
+                <div class="caixanum2"> 
+    
+                    <p class="numeros1"><button class="numeros" onclick="insert(4)">4</button></p>
+                    <p class="numeros1"><button class="numeros" onclick="insert(5)">5</button></p>
+                    <p class="numeros1"><button class="numeros" onclick="insert(6)">6</button></p>
+    
+                 </div>
+    
+                 <div class="caixanum3"> 
+    
+                    <p class="numeros1"><button class="numeros" onclick="insert(7)">7</button></p>
+                    <p class="numeros1"><button class="numeros" onclick="insert(8)">8</button></p>
+                    <p class="numeros1"><button class="numeros" onclick="insert(9)">9</button></p>
+    
+                 </div>
+    
+                 <div class="caixanum4"> 
+    
+                    <p class="numeros1"><button class="numeros" onclick="insert(0)">0</button></p>
+                    
+    
+                 </div>
+    
+                 <div class="vota">
+                    <p class="corrige">CORRIGE</p>
+                    <p class="confirma">CONFIRMA</p>
+                 </div>
+    
+            </div>
+    
+        </div>
+
+        <div class="fim"> 
+            <span id="texto">FIM</span>
+        </div>
+            <p class="encerrar">ENCERRAR VOTAÇÃO</p>
+        
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="dados.js"></script>
+    <script src="acao.js"></script>
+
+</body>
+</html>
